@@ -84,9 +84,14 @@ a {
   text-decoration: none;
   /* підкреслення */
 }
-.container {
-  padding: 0 10px;
+.big-container {
   max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 920px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -99,11 +104,13 @@ body {
   color: var(--primapy-dark);
 }
 .header {
-  margin-top: 25px;
   position: absolute;
   left: 0;
   right: 0;
   background: linear-gradient(180deg, #d8d4ca 0%, rgba(217, 217, 217, 0) 100%);
+}
+.d25 {
+  height: 25px;
 }
 .nav {
   display: flex;
@@ -133,23 +140,115 @@ body {
   background-position: center;
 }
 .pormo__inner {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   text-align: center;
+  padding-top: 100px;
 }
 
 .title {
-  font-family: "Impact", sans-serif;
+  font-family: "Impact";
   font-size: 76px;
   font-weight: 400;
   letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .subtitle {
   font-family: Impact;
   font-size: 48px;
   font-weight: 400;
+  margin-bottom: 10px;
+  border-bottom: var(--primapy-dark);
+  align-self: center;
+}
+.subtitle span {
+  display: block;
+  font-size: 34px;
+  color: var(--secondary-yellow);
+  padding: 10px 0;
 }
 .promo__text {
   font-family: "Roboto Condensed";
-  font-size: 15.531px;
+  font-size: 16px;
   font-weight: 400;
+  color: var(--secondary-dark);
+  margin-bottom: 10px;
 }
+.promo__arrow {
+  margin-top: auto;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+/* Info section */
+
+.info {
+  margin-bottom: 100px;
+}
+
+.info-part {
+  padding-top: 100px;
+  justify-content: space-between;
+}
+.info-part--third {
+  padding-top: 66px;
+}
+
+.info-part--first {
+  display: block;
+}
+.info__title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 32px;
+}
+.info-part-second {
+  display: flex;
+}
+.info__part-textbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+.info__text {
+  flex-basis: 440px;
+  padding-bottom: 30px;
+}
+.info__part-img {
+  object-fit: cover;
+}
+
+.info__content {
+  flex-basis: 415px;
+}
+.info__table {
+}
+.info-part-second .info__text {
+  max-width: 352px;
+}
+.info-part-third .info__text {
+  max-width: 377px;
+}
+.info-part--third {
+  display: flex;
+}
+
+.info__table {
+  flex-basis: 450px;
+  border-bottom: 1px solid var(--primapy-dark);
+  top: 20px;
+}
+.info__table::before {
+  content: "";
+  border-bottom: 1px solid var(--primapy-dark);
+  position: absolute;
+  width: 100%;
+  top: -20px;
+}
+.info__table td {
+  margin-bottom: 20px;
+}
+/* Track section */
