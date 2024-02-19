@@ -407,6 +407,9 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+.blog__item {
+  max-width: 50%;
+}
 .blog__item-img {
   margin-bottom: 20px;
 }
@@ -419,6 +422,7 @@ body {
 }
 .blog__item-text {
   margin-bottom: 10px;
+  max-width: 50%;
 }
 .blog__item-link {
   font-style: 12px;
